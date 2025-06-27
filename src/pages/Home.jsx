@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PageHeader from '../components/PageHeader';
+import ISA95StackBubbles from '../components/ISA95StackBubbles';
 
 const Home = () => {
   return (
@@ -99,38 +100,39 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Technology Stack Preview */}
-        <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-3xl p-12 text-white mb-16">
-          <h2 className="text-3xl font-bold text-center mb-8">Technology Stack</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">⚙️</span>
-              </div>
-              <h3 className="font-semibold mb-2">PLCs</h3>
-              <p className="text-blue-100 text-sm">Industrial control systems</p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🖥️</span>
-              </div>
-              <h3 className="font-semibold mb-2">SCADA</h3>
-              <p className="text-blue-100 text-sm">Supervisory control</p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">📊</span>
-              </div>
-              <h3 className="font-semibold mb-2">MES</h3>
-              <p className="text-blue-100 text-sm">Manufacturing execution</p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">☁️</span>
-              </div>
-              <h3 className="font-semibold mb-2">Cloud</h3>
-              <p className="text-blue-100 text-sm">Data & analytics</p>
-            </div>
+        {/* Why Manufacturing is Complex */}
+        <div className="bg-white rounded-3xl p-12 shadow-lg mb-16 flex flex-col md:flex-row items-center gap-8">
+          <div className="flex-shrink-0 flex items-center justify-center w-32 h-32 bg-yellow-100 rounded-full mb-6 md:mb-0">
+            <span className="text-6xl">🧩</span>
+          </div>
+          <div>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">Why is Manufacturing So Complex?</h2>
+            <ul className="list-disc pl-6 text-gray-700 space-y-2">
+              <li><span className="font-semibold">Diverse Vendors:</span> Countless hardware and software vendors, each with unique protocols and standards.</li>
+              <li><span className="font-semibold">Legacy Systems:</span> Old and new technologies must work together, often with limited documentation.</li>
+              <li><span className="font-semibold">Real-Time Demands:</span> Millisecond-level control and monitoring is required for safety and efficiency.</li>
+              <li><span className="font-semibold">Security & Reliability:</span> Systems must be robust against failures and cyber threats.</li>
+              <li><span className="font-semibold">Data Silos:</span> Information is often trapped in isolated systems, making integration difficult.</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* ISA-95 Stack Diagram */}
+        <ISA95StackBubbles />
+
+        {/* Project Motivation */}
+        <div className="bg-white rounded-3xl p-12 shadow-lg mb-16 flex flex-col md:flex-row items-center gap-8">
+          <div className="flex-shrink-0 flex items-center justify-center w-32 h-32 bg-green-100 rounded-full mb-6 md:mb-0">
+            <span className="text-6xl">🚀</span>
+          </div>
+          <div>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">Why Are We Building This Project?</h2>
+            <ul className="list-disc pl-6 text-gray-700 space-y-2">
+              <li><span className="font-semibold">Education:</span> Demystify the manufacturing stack for engineers and decision-makers.</li>
+              <li><span className="font-semibold">Integration:</span> Show how modern and legacy systems can work together using open standards.</li>
+              <li><span className="font-semibold">Open Collaboration:</span> Create a vendor-agnostic, open-source demo for the community.</li>
+              <li><span className="font-semibold">Innovation:</span> Explore new technologies and best practices for smart manufacturing.</li>
+            </ul>
           </div>
         </div>
 
