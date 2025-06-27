@@ -9,7 +9,7 @@ const About = () => {
       initials: 'VR',
       bio: 'Expert in PLC programming and industrial control systems with deep experience in manufacturing environments.',
       expertise: ['PLC Programming', 'Industrial Automation', 'Manufacturing Systems'],
-      social: { linkedin: '#', github: '#', twitter: '#' }
+      social: { linkedin: 'https://www.linkedin.com/in/vladromanov/', github: '#', twitter: '#' }
     },
     {
       name: 'Kudzai Manditereza',
