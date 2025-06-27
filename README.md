@@ -1,70 +1,109 @@
-# Getting Started with Create React App
+# Sim Factory Lab
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Three engineers building a full-stack factory automation solution by exploring and integrating various vendor technologies.
 
-## Available Scripts
+## 🏭 Project Overview
 
-In the project directory, you can run:
+We're three engineers passionate about industrial automation, working together to build a comprehensive factory automation solution. Our project explores how different vendor technologies can be integrated into a unified, full-stack system that demonstrates the potential of modern manufacturing.
 
-### `npm start`
+## 🎯 Project Goals
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Research**: Explore and evaluate different vendor technologies and integration approaches
+- **Integrate**: Connect multiple vendor systems into a unified automation platform
+- **Build**: Develop a complete full-stack factory automation solution
+- **Validate**: Test and demonstrate the effectiveness of integrated solutions
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 👥 The Team
 
-### `npm test`
+- **Vladimir Romanov** - PLC & Industrial Automation Specialist
+- **Kudzai Manditereza** - Software Architect & SCADA Expert  
+- **Justin Dean** - Data Scientist & MES Specialist
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🔧 Technology Stack
 
-### `npm run build`
+We're exploring various vendor technologies across these areas:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **PLC Systems**: Siemens, Allen-Bradley, Schneider Electric, Mitsubishi
+- **SCADA Platforms**: Wonderware, FactoryTalk View, WinCC, Ignition
+- **MES Solutions**: SAP ME, Siemens Opcenter, Rockwell FactoryTalk
+- **Communication Protocols**: Modbus, OPC UA, Ethernet/IP, Profinet
+- **Cloud & Analytics**: AWS IoT, Azure IoT, Google Cloud
+- **HMI & Visualization**: PanelView, WinCC Flexible, Custom Web Interfaces
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
 
-### `npm run eject`
+### Installation
+```bash
+# Clone the repository
+git clone https://github.com/VRomanov89/sim-factory-lab.git
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Navigate to the project directory
+cd sim-factory-lab
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Install dependencies
+npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Start the development server
+npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The application will be available at `http://localhost:3001`
 
-## Learn More
+## 📁 Project Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+sim-factory-lab/
+├── src/
+│   ├── components/     # Reusable React components
+│   ├── pages/         # Page components
+│   ├── data/          # Static data and content
+│   ├── logo/          # Logo components
+│   └── App.js         # Main application component
+├── public/            # Static assets
+└── package.json       # Dependencies and scripts
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🛠️ Built With
 
-### Code Splitting
+- **React** - Frontend framework
+- **React Router** - Client-side routing
+- **Tailwind CSS** - Utility-first CSS framework
+- **React Markdown** - Markdown rendering for blog posts
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📖 Documentation
 
-### Analyzing the Bundle Size
+Our project documentation and progress updates are available in the [Project Updates](/blog) section of our website.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🤝 Contributing
 
-### Making a Progressive Web App
+We welcome contributions! This is an open-source project and we appreciate any help.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-### Advanced Configuration
+## 📝 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This project is open source and available under the [MIT License](LICENSE).
 
-### Deployment
+## 🔗 Links
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- **Website**: [Sim Factory Lab](https://sim-factory-lab.vercel.app)
+- **GitHub**: [https://github.com/VRomanov89/sim-factory-lab](https://github.com/VRomanov89/sim-factory-lab)
+- **Issues**: [Report a bug](https://github.com/VRomanov89/sim-factory-lab/issues)
 
-### `npm run build` fails to minify
+## 📞 Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Vladimir Romanov** - [LinkedIn](https://linkedin.com/in/vladimir-romanov)
+- **Kudzai Manditereza** - [LinkedIn](https://linkedin.com/in/kudzai-manditereza)  
+- **Justin Dean** - [LinkedIn](https://linkedin.com/in/justin-dean)
+
+---
+
+**Sim Factory Lab** - Building the future of industrial automation, one integration at a time.
