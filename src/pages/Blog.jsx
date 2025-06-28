@@ -1,17 +1,18 @@
 import React from 'react';
 import BlogCard from '../components/BlogCard';
 import { blogPosts } from '../data/blogPosts';
-import PageHeader from '../components/PageHeader';
+import VisualPageHeader from '../components/VisualPageHeader';
 
 const Blog = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <PageHeader
+      <VisualPageHeader
         title="Project Updates"
-        subtitle="Technical documentation and progress updates from our factory automation project"
-        backgroundType="light"
-        showFloatingElements={false}
+        subtitle="Community updates, shared learning, and progress on building the modern manufacturing stack."
+        illustrationType="factory"
+        accentColor="gray"
+        videoSrc={process.env.PUBLIC_URL + '/videos/factory-header2.mp4'}
       />
 
       {/* Main content */}

@@ -1,15 +1,15 @@
 import React from 'react';
-import PageHeader from '../components/PageHeader';
+import VisualPageHeader from '../components/VisualPageHeader';
 
 const About = () => {
   const teamMembers = [
     {
       name: 'Vladimir Romanov',
-      role: 'PLC & Industrial Automation Specialist',
+      role: 'Manufacturing & Industrial Automation Leader',
       initials: 'VR',
-      bio: 'Expert in PLC programming and industrial control systems with deep experience in manufacturing environments.',
+      bio: 'Managing Partner at Joltek, a company dedicated to helping manufacturing leaders modernize OT systems for greater reliability, data visibility, and ROI. Joltek specializes in consulting, training, upskilling, and systems integration for manufacturing organizations, delivering tailored solutions for digital transformation and operational excellence.',
       expertise: ['PLC Programming', 'Industrial Automation', 'Manufacturing Systems'],
-      social: { linkedin: 'https://www.linkedin.com/in/vladromanov/', github: '#', twitter: '#' }
+      social: { linkedin: 'https://www.linkedin.com/in/vladromanov/', github: 'https://github.com/VRomanov89', twitter: 'https://x.com/VRomanov89', web: 'https://www.joltek.com/' }
     },
     {
       name: 'Kudzai Manditereza',
@@ -32,11 +32,12 @@ const About = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <PageHeader
+      <VisualPageHeader
         title="About Our Project"
-        subtitle="Three engineers exploring the future of factory automation through technology integration"
-        backgroundType="dark"
-        showFloatingElements={true}
+        subtitle="A community build for engineers and enthusiasts to learn, share, and explore the future of factory automation together."
+        illustrationType="robot"
+        accentColor="green"
+        videoSrc={process.env.PUBLIC_URL + '/videos/factory-header3.mp4'}
       />
 
       {/* Main content */}
@@ -61,9 +62,17 @@ const About = () => {
                 className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
               >
                 {/* Avatar */}
-                <div className="w-24 h-24 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold">
-                  {member.initials}
-                </div>
+                {member.name === 'Vladimir Romanov' ? (
+                  <img
+                    src={process.env.PUBLIC_URL + '/profile_photos/vladimir-romanov.webp'}
+                    alt="Vladimir Romanov"
+                    className="w-24 h-24 rounded-full object-cover mx-auto mb-6 border-4 border-blue-200 shadow-lg"
+                  />
+                ) : (
+                  <div className="w-24 h-24 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold">
+                    {member.initials}
+                  </div>
+                )}
                 
                 {/* Info */}
                 <h3 className="text-xl font-semibold text-gray-900 mb-2 text-center">{member.name}</h3>
@@ -97,11 +106,21 @@ const About = () => {
                       <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                     </svg>
                   </a>
-                  <a href={member.social.twitter} className="text-gray-400 hover:text-blue-400 transition-colors">
-                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                  <a href={member.social.twitter} className="text-gray-400 hover:text-black transition-colors" target="_blank" rel="noopener noreferrer">
+                    {/* Official X logo SVG from https://about.x.com/en/who-we-are/brand-toolkit */}
+                    <svg className="w-5 h-5" viewBox="0 0 120 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="120" height="122" fill="white"/>
+                      <path d="M89.6 18.2H109.2L74.8 58.1L115.2 110.2H83.2L59.7 80.2L33.7 110.2H14.1L50.6 67.6L12 18.2H45.2L66.7 45.9L89.6 18.2ZM83.9 101.1H93.2L41.1 27.1H31.2L83.9 101.1Z" fill="black"/>
                     </svg>
                   </a>
+                  {member.social.web && (
+                    <a href={member.social.web} className="text-gray-400 hover:text-green-600 transition-colors" target="_blank" rel="noopener noreferrer">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="10" strokeWidth="2" />
+                        <path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20" strokeWidth="2" />
+                      </svg>
+                    </a>
+                  )}
                 </div>
               </div>
             ))}

@@ -1,17 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import PageHeader from '../components/PageHeader';
+import VisualPageHeader from '../components/VisualPageHeader';
 import ISA95StackBubbles from '../components/ISA95StackBubbles';
 
 const Home = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <PageHeader
+      <VisualPageHeader
         title="Sim Factory Lab"
-        subtitle="Three engineers building a full-stack factory automation solution"
-        backgroundType="gradient"
-        showFloatingElements={true}
+        subtitle="A community-driven project for learning and understanding architectures and technologies within the modern manufacturing stack."
+        illustrationType="factory"
+        accentColor="blue"
+        videoSrc={process.env.PUBLIC_URL + '/videos/factory-header.mp4'}
       />
 
       {/* Main content */}

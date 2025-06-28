@@ -8,18 +8,20 @@ import Technologies from './pages/Technologies';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 import './App.css';
+import SEOHead from './components/SEOHead';
 
 function App() {
   return (
     <Router>
       <div className="App">
+        <SEOHead />
         <Navbar />
         <main>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/technologies" element={<Technologies />} />
-            <Route path="/blog" element={<Blog />} />
+            <Route path="/" element={<><SEOHead title="Home" description="A community-driven project for learning and understanding architectures and technologies within the modern manufacturing stack." /><Home /></>} />
+            <Route path="/about" element={<><SEOHead title="About" description="Learn about the Sim Factory Lab team, our mission, and our approach to modern manufacturing and industrial automation." /><About /></>} />
+            <Route path="/technologies" element={<><SEOHead title="Technologies" description="Explore the technologies powering modern manufacturing, from PLCs and SCADA to cloud analytics and visualization." /><Technologies /></>} />
+            <Route path="/blog" element={<><SEOHead title="Blog" description="Community updates, shared learning, and progress on building the modern manufacturing stack." /><Blog /></>} />
             <Route path="/blog/:slug" element={<BlogPost />} />
           </Routes>
         </main>

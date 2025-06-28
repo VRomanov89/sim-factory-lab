@@ -100,7 +100,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 📞 Contact
 
-- **Vladimir Romanov** - [LinkedIn](https://www.linkedin.com/in/vladromanov/)
+- **Vladimir Romanov** - [LinkedIn](https://www.linkedin.com/in/vladromanov/) | [GitHub](https://github.com/VRomanov89) | [X](https://x.com/VRomanov89)
 - **Kudzai Manditereza** - [LinkedIn](https://linkedin.com/in/kudzai-manditereza)  
 - **Justin Dean** - [LinkedIn](https://linkedin.com/in/justin-dean)
 

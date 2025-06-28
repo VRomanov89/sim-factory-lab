@@ -1,5 +1,5 @@
 import React from 'react';
-import PageHeader from '../components/PageHeader';
+import VisualPageHeader from '../components/VisualPageHeader';
 
 const Technologies = () => {
   const technologyAreas = [
@@ -89,11 +89,12 @@ const Technologies = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <PageHeader
+      <VisualPageHeader
         title="Technology Exploration"
-        subtitle="Researching and integrating various vendor technologies for our factory automation project"
-        backgroundType="industrial"
-        showFloatingElements={true}
+        subtitle="A collaborative journey to explore, document, and demystify the technologies powering modern manufacturing."
+        illustrationType="data"
+        accentColor="yellow"
+        videoSrc={process.env.PUBLIC_URL + '/videos/factory-header4.mp4'}
       />
 
       {/* Main content */}

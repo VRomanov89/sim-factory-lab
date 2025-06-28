@@ -3,6 +3,20 @@ export const blogPosts = [
     slug: 'starting-machine-monitoring',
     title: 'How We\'re Starting with a Single Machine',
     date: '2025-01-26',
+    author: 'Vladimir Romanov',
+    authorProfile: {
+      name: 'Vladimir Romanov',
+      role: 'Manufacturing & Industrial Automation Leader',
+      image: process.env.PUBLIC_URL + '/profile_photos/vladimir-romanov.webp',
+      bio: 'Managing Partner at Joltek, a company dedicated to helping manufacturing leaders modernize OT systems for greater reliability, data visibility, and ROI. Joltek specializes in consulting, training, upskilling, and systems integration for manufacturing organizations, delivering tailored solutions for digital transformation and operational excellence.',
+      social: {
+        linkedin: 'https://www.linkedin.com/in/vladromanov/',
+        github: 'https://github.com/VRomanov89',
+        twitter: 'https://x.com/VRomanov89',
+        web: 'https://www.joltek.com/'
+      }
+    },
+    tags: ['Machine Monitoring', 'Getting Started'],
     excerpt: 'Our journey begins with monitoring a single machine to understand the fundamentals of industrial automation.',
     content: `# Our First Project
 
@@ -33,6 +47,20 @@ Stay tuned for updates on our progress!`
     slug: 'choosing-our-tech-stack',
     title: 'Choosing Our Technology Stack',
     date: '2025-01-25',
+    author: 'Vladimir Romanov',
+    authorProfile: {
+      name: 'Vladimir Romanov',
+      role: 'Manufacturing & Industrial Automation Leader',
+      image: process.env.PUBLIC_URL + '/profile_photos/vladimir-romanov.webp',
+      bio: 'Managing Partner at Joltek, a company dedicated to helping manufacturing leaders modernize OT systems for greater reliability, data visibility, and ROI. Joltek specializes in consulting, training, upskilling, and systems integration for manufacturing organizations, delivering tailored solutions for digital transformation and operational excellence.',
+      social: {
+        linkedin: 'https://www.linkedin.com/in/vladromanov/',
+        github: 'https://github.com/VRomanov89',
+        twitter: 'https://x.com/VRomanov89',
+        web: 'https://www.joltek.com/'
+      }
+    },
+    tags: ['Tech Stack', 'Industrial Automation'],
     excerpt: 'A deep dive into the technologies we\'re selecting for our industrial automation platform.',
     content: `# Technology Stack Selection
 
@@ -75,6 +103,20 @@ We'll share more details about each component as we implement them.`
     slug: 'meet-the-team',
     title: 'Meet the Sim Factory Lab Team',
     date: '2025-01-24',
+    author: 'Vladimir Romanov',
+    authorProfile: {
+      name: 'Vladimir Romanov',
+      role: 'Manufacturing & Industrial Automation Leader',
+      image: process.env.PUBLIC_URL + '/profile_photos/vladimir-romanov.webp',
+      bio: 'Managing Partner at Joltek, a company dedicated to helping manufacturing leaders modernize OT systems for greater reliability, data visibility, and ROI. Joltek specializes in consulting, training, upskilling, and systems integration for manufacturing organizations, delivering tailored solutions for digital transformation and operational excellence.',
+      social: {
+        linkedin: 'https://www.linkedin.com/in/vladromanov/',
+        github: 'https://github.com/VRomanov89',
+        twitter: 'https://x.com/VRomanov89',
+        web: 'https://www.joltek.com/'
+      }
+    },
+    tags: ['Team', 'About Us'],
     excerpt: 'Introducing the founding team behind Sim Factory Lab and our vision for industrial automation.',
     content: `# Meet the Team
 
